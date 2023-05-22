@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'dashboard',
     'accounts',
     'courses',
     'todos'
@@ -78,7 +79,7 @@ WSGI_APPLICATION = 'notify.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
+        'ENGINE': 'mysql.connector.django',
         'NAME': 'notify',
         'USER': 'root',
         'PASSWORD': ''
