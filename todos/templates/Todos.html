@@ -5,16 +5,22 @@
 {% block content %}
   {% include 'components/Navbar.html' %}
   {% include 'components/Sidebar.html' %}
+  {% include 'components/TodoModal.html'   %}
   <div class="p-4 sm:ml-64">
     <div class="p-4 border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700 mt-14">
       {% include 'components/Breadcumb.html' with current_page='todos' %}
       <div class="py-4">
+        <div class="px-4 py-2">
+          <button data-modal-target="addTodoModal" data-modal-toggle="addTodoModal" class="text-white bg-green-400 hover:bg-green-500 focus:ring-4 focus:outline-none focus:ring-green-400 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-green-500 dark:hover:bg-green-600 dark:focus:ring-green-600" type="button">
+            Add New
+          </button>
+        </div>
         {% include 'components/TodoTabs.html'   %}
       </div>
     </div>
 
     <div class="p-4 border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700 mt-6">
-      
+      {% include 'components/ProgressBar.html' with color='green' %}
     </div>
   </div>
 {% endblock %}
