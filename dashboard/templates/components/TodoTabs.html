@@ -1,0 +1,29 @@
+<div class="grid gap-4 grid-cols-3 px-4">
+  <div class="flex items-start p-4 rounded-md bg-gray-400">
+    <span class="font-bold text-white">Todo</span>
+  </div>
+  <div class="flex items-start p-4 rounded-md bg-yellow-400">
+    <span class="font-bold text-white">In Progress</span>
+  </div>
+  <div class="flex items-start p-4 rounded-md bg-green-400">
+    <span class="font-bold text-white">Completed</span>
+  </div>
+</div>
+
+<div class="flex gap-4 px-4 mt-4">
+  <div class="h-80 overflow-y-auto w-full">
+    {% include 'components/TodoCard.html' with color='gray'  %}
+    {% include 'components/TodoCard.html' with color='gray'  %}
+    {% include 'components/TodoCard.html' with color='gray'  %}
+    {% include 'components/TodoCard.html' with color='gray'  %}
+    {% include 'components/TodoCard.html' with color='gray'  %}
+    {% include 'components/TodoCard.html' with color='gray'  %}
+    {% include 'components/TodoCard.html' with color='gray'  %}
+  </div>
+  <div class="h-80 overflow-auto w-full">
+    {% include 'components/TodoCard.html' with color='yellow'  %}
+  </div>
+  <div class="h-80 overflow-auto w-full">
+    {% include 'components/TodoCard.html' with color='green'  %}
+  </div>
+</div>

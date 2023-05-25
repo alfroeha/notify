@@ -21,5 +21,7 @@ from django.urls.conf import include
 
 urlpatterns = [
     path('', include('dashboard.urls')),
+    path('courses/', include('courses.urls')),
+    path('todos/', include('todos.urls')),
     path('admin/', admin.site.urls),
 ]
