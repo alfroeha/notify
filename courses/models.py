@@ -11,4 +11,3 @@ class Course(models.Model):
     name=models.CharField(max_length=250)
     day=models.CharField(max_length=20)
     room=models.CharField(max_length=20)
-
