@@ -19,7 +19,7 @@ class CustomUserManager(BaseUserManager):
 
 
 class CustomUser(AbstractUser):
-    username=models.CharField(max_length=30)
+    username = models.CharField(max_length=30)
     EMAIL_FIELD = 'email'
     REQUIRED_FIELDS = []
 
@@ -30,7 +30,6 @@ class CustomUser(AbstractUser):
         constraints = [
             models.UniqueConstraint(fields=['username'], name='unique_username'),
         ]
-    def __str__(self):
-        return self.email
+
     def __str__(self):
         return self.username
