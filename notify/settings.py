@@ -81,7 +81,7 @@ WSGI_APPLICATION = 'notify.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'mysql.connector.django',
+        'ENGINE': 'django.db.backends.mysql',
         'NAME': 'notify',
         'USER': 'root',
         'PASSWORD': ''
