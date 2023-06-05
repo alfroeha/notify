@@ -1,10 +1,7 @@
 <div class="w-full">
   <div class="flex flex-no-wrap scrolling-touch items-start">
-    {% include 'components/Card.html'   %}
-    {% include 'components/Card.html'   %}
-    {% include 'components/Card.html'   %}
-    {% include 'components/Card.html'   %}
-    {% include 'components/Card.html'   %}
-    {% include 'components/Card.html'   %}
+    {% for course in courses %}
+      {% include 'components/Card.html' with course=course  %}
+    {% endfor %}
   </div>
 </div>

@@ -6,7 +6,7 @@
   {% include 'components/Navbar.html' %}
   {% include 'components/Sidebar.html' %}
   {% include 'components/TodoModal.html'   %}
-  <div class="p-4 sm:ml-64">
+  <div class="mt-4 p-4 sm:ml-64">
     <div class="p-4 border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700 mt-14">
       {% include 'components/Breadcumb.html' with current_page='todos' %}
       <div class="py-4">
@@ -20,7 +20,6 @@
     </div>
 
     <div class="p-4 border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700 mt-6">
-      {% include 'components/ProgressBar.html' with color='green' %}
     </div>
   </div>
 {% endblock %}
