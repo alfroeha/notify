@@ -1,5 +1,4 @@
 function deleteCourse(itemId) {
-  console.log(itemId);
   fetch(`http://localhost:8000/courses/${itemId}`, {
     method: "DELETE",
   }).then(() => {
