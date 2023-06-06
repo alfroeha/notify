@@ -36,7 +36,7 @@ def todo(request, id):
     todo = get_object_or_404(Todo, id=id)
     if request.method == 'DELETE':
         todo.delete()
-        return True
+        return JsonResponse({'error': None})
     elif request.method == 'POST':
         form = TodoForm(request.POST)
         if form.is_valid():

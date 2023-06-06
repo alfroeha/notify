@@ -26,7 +26,7 @@ def course(request, id):
   course = get_object_or_404(Course, id=id)
   if request.method == 'DELETE':
     course.delete()
-    return True
+    return JsonResponse({'error': None})
   elif request.method == 'POST':
     form = CourseForm(request.POST)
     if form.is_valid():
